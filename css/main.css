@@ -1,0 +1,121 @@
+/* public css */
+:root{
+    --social-color:#787878;
+}
+body,html{
+    font-family: Rubik;
+}
+section{
+    padding: 60px 0;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* private css */
+header{
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,0,0,0.5);
+}
+header .header .nav-bar{
+    height: 100vh;
+    width: 0%;
+    position: relative;
+    overflow: hidden;
+}
+header .header .nav-bar .ic-close{
+    width: 20px;
+    height: 20px;
+}
+header .header .nav-bar svg,
+header .header .nav-bar li a{
+    color: #fff;
+    cursor: pointer;
+}
+header .header .nav-bar svg:hover,
+header .header .nav-bar li a:hover {
+    color: rgba(255,0,0,0.5);
+}
+header .header .toggle{
+    transform: translateY(300px);
+    cursor: pointer;
+}
+header .header .content{
+    transform: translateY(200px);
+}
+/* end header */
+/* start section singer */
+.singer .accordion-header .accordion-button{
+    background-color: #e68386;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+.singer .accordion-body{
+    background-color: #cccccc;
+}
+/* end section singer */
+/* start section join us */
+.join-us{
+    background-image: url(../img/join_us.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.join-us::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,0,0,0.3);
+}
+.join-us .block-date{
+    padding: 0 5px;
+}
+.join-us .block-date .days-date,
+.join-us .block-date .hours-date,
+.join-us .block-date .minutes-date,
+.join-us .block-date .seconds-date{
+    padding: 25px 30px;
+    border: 2px solid #fff;
+    text-align: center;
+}
+/* end section join us */
+/* start section contact us */
+.contact-us .contact p,
+.contact-us .contact ul li{
+    color: var(--social-color);
+}
+.contact-us .contact .social-media svg{
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid var(--social-color);
+    color: var(--social-color);
+    cursor: pointer;
+}
+.contact-us .contact .social-media svg:hover{
+    background-color: rgba(255,0,0,0.8);
+    color: #fff;
+}
+.contact-us .form .message-input textarea{
+    height: 200px;
+}
